@@ -1,0 +1,143 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#panorama {
+    width: 100vw;
+    height: 100vh;
+}
+
+.custom-tooltip {
+    max-width: none;
+    width: 300px;
+    padding: 0;
+}
+
+.custom-tooltip img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.custom-tooltip h2,
+.custom-tooltip p {
+    margin: 1rem;
+    text-align: justify;
+}
+
+.psv-tooltip-arrow {
+    display: none;
+}
+
+.custom-link-marker {
+    height: 50px !important;
+    width: 50px !important;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    background: url('../img/common/hintbg.jpg') no-repeat center top;
+    background-size: cover;
+    box-shadow: 0 0 5px 3px #00000073 inset;
+    cursor: pointer;
+}
+.custom-link-marker svg {
+    display: none;
+}
+
+/* Animations for polygons */
+#psv-marker-polygon,
+#psv-marker-test,
+#psv-marker-polygon2 {
+    /*-webkit-animation: mymove 2s infinite; /* Chrome, Safari, Opera */
+    /* animation: mymove 2s infinite; */
+}   
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {opacity: 0;}
+}
+
+/* Стандартный синтаксис */
+@keyframes mymove {
+    50% {opacity: 0;}
+}
+
+
+
+.psv-tooltip {
+    background: #fff;
+    padding: 12px;
+    font-family: sans-serif;
+}
+.psv-tooltip-content {
+    padding: 0;
+    text-shadow: none;
+}
+
+.house-tooltip {
+    color: #000;
+}
+
+.house-tooltip h3 {
+    margin: 0;
+    font-weight: 500;
+    display: block;
+}
+
+.house-tooltip ul {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.house-tooltip_success h3 {
+    background-color: #22bc7b;
+    padding: 6px;
+    border-radius: 12px;
+    font-size: 14px;
+    border-radius: 10px 0px;
+    color: #fff;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.house-tooltip_unsuccess h3 {
+    background-color: #f87d60;
+    padding: 6px;
+    border-radius: 12px;
+    font-size: 14px;
+    border-radius: 10px 0px;
+    color: #fff;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.house-tooltip_success ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.house-tooltip ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+.house-tooltip ul li span:first-child {
+    color: rgb(157, 157, 157);
+    font-size: 14px;
+    margin-right: 4px;
+    font-weight: bold;
+}
+.psv-tooltip {
+    max-width: none;
+}
+.house-tooltip ul li span:last-child {
+    color: rgb(25, 25, 25);
+    font-size: 16px;
+    font-weight: bold;
+}
+
