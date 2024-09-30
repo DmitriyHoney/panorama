@@ -17,6 +17,16 @@
     <title>Панорамы</title>
   </head>
   <body>
+    <div class="dev-tools">
+      <button id="btn-toogle-dev-mode">dev</button>
+      <button id="btn-toogle-hidetooltips-mode">hide tooltips</button>
+      <button id="btn-create-success-house">Создать дом - В продаже</button>
+      <button id="btn-create-unsuccess-house">Создать дом - Продано</button>
+      <button id="btn-create-road">Создать дорогу</button>
+      <button id="btn-create-hide-zone">Создать невидимую зону</button>
+      <button id="btn-delete-figure">Удалить фигуру по id</button>
+      <button id="btn-update-figure">Обновить контент фигуры</button>
+    </div>
     <div id="viewer" style="width: 100vw; height: 100vh"></div>
     <script type="text/template" id="tooltip-content">
       <article>
@@ -35,6 +45,7 @@
 
     <script src="js/@photo-sphere-viewer/virtual-tour-plugin@5_index.js"></script>
     <script src="js/@photo-sphere-viewer/autorotate-plugin@5_index.js"></script>
+    <script src="js/node1.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

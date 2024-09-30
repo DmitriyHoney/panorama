@@ -183,6 +183,44 @@ svg {
   pointer-events: none !important;
 } */
 
+body.dev-mode .house-tooltip pre {
+  display: block !important;
+}
+
 .house-tooltip pre {
   display: none;
+}
+
+.dev-tools {
+  position: absolute;
+  z-index: 9999999999999999;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  border-radius: 12px;
+}
+button {
+  cursor: pointer;
+}
+
+body.dev-mode #btn-toogle-dev-mode {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: #fff;
+}
+
+body.hide-tooltip-mode #btn-toogle-hidetooltips-mode {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: #fff;
+}
+
+body.hide-tooltip-mode svg path {
+  pointer-events: none !important;
+}
+
+body.hide-tooltip-mode svg {
+  pointer-events: none !important;
+}
+
+#btn-delete-figure {
+  background-color: red;
+  color: #fff;
 }
