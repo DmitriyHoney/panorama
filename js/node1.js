@@ -2583,6 +2583,7 @@ window.markers1 = [
   },
   {
     id: "NODE_1_HIDE_AREA_1",
+    goToNodeId: 3,
     polyline: [
       [
         [4.5806051944656065, -0.21202044558661193],

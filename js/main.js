@@ -1,9 +1,10 @@
 window.PhotoSphereViewer = PhotoSphereViewer;
-// TODO REMOVE
-window.markers2 = [];
-window.markers3 = [];
 const PATH = "./img";
-const DEV_MODE = true;
+const DEV_MODE = false;
+
+const $devTools = document.querySelector(".dev-tools");
+if (!DEV_MODE && $devTools) $devTools.style.display = "none";
+
 const viewer = new PhotoSphereViewer.Viewer({
   container: document.querySelector("#viewer"),
   panorama: `${PATH}/scene1/DJI_0514.JPG`,
@@ -40,6 +41,16 @@ const viewer = new PhotoSphereViewer.Viewer({
 
 const markersPlugin = viewer.getPlugin(PhotoSphereViewer.MarkersPlugin);
 markersPlugin.addEventListener("select-marker", ({ marker, doubleClick }) => {
+  // Если кликнули по серой области перейти в другую область
+  if (marker.config.id.indexOf(PREFIXES.HIDE_AREA) >= 0) {
+    if (!marker?.config?.goToNodeId) {
+      console.warn(
+        `Передайте в объект с id ${marker.config.id} параметр goToNodeId, который будет указывать к какой панораме переходить по клику`
+      );
+    } else virtualTour.setCurrentNode(marker.config.goToNodeId);
+  }
+
+  // функционал для редактирования
   if (!doubleClick) return;
   if (!DEV_MODE) return;
   // установить режим, чтобы можно было кликать внутри маркера
@@ -74,12 +85,28 @@ const autorotate = viewer.getPlugin(PhotoSphereViewer.AutorotatePlugin);
 
 viewer.addEventListener("ready", () => init(), { once: false });
 function init() {
+  const addClassNameFigure = (i) => ({
+    ...i,
+    className: _getClassNameFigureById(i.id),
+  });
+  const removeTooltipOfRoadFigure = (i) => ({
+    ...i,
+    tooltip:
+      i.id.indexOf(PREFIXES.ROAD) >= 0 || i.id.indexOf(PREFIXES.HIDE_AREA) >= 0
+        ? null
+        : i.tooltip,
+  });
   virtualTour.addEventListener("node-changed", ({ node, data }) => {
     if (node.overlay) viewer.setOverlay(node.overlay, node.opacity);
   });
+  markers1 = markers1.map(addClassNameFigure).map(removeTooltipOfRoadFigure);
+  markers2 = markers2.map(addClassNameFigure).map(removeTooltipOfRoadFigure);
+  markers3 = markers3.map(addClassNameFigure).map(removeTooltipOfRoadFigure);
+  markers4 = markers4.map(addClassNameFigure).map(removeTooltipOfRoadFigure);
   const markersFor1Node = DEV_MODE ? [] : markers1;
   const markersFor2Node = DEV_MODE ? [] : markers2;
   const markersFor3Node = DEV_MODE ? [] : markers3;
+  const markersFor4Node = DEV_MODE ? [] : markers4;
   virtualTour.setNodes([
     {
       id: "1",
@@ -103,7 +130,13 @@ function init() {
       id: "2",
       panorama: `${PATH}/scene1/DJI_0515.JPG`,
       name: "Перейти к локации №2",
-      links: [{ nodeId: "1", gps: [10, 95, 0] }],
+      links: [
+        { nodeId: "1", gps: [10, 95, 0] },
+        {
+          nodeId: "3",
+          gps: [10, 35, 0],
+        },
+      ],
       markers: [...markersFor2Node],
       gps: [-30, 0, 3],
       panoData: { poseHeading: 327 },
@@ -112,8 +145,33 @@ function init() {
       id: "3",
       panorama: `${PATH}/scene1/DJI_0517.JPG`,
       name: "Перейти к локации №3",
-      links: [{ nodeId: "1", gps: [10, 95, 0] }],
+      links: [
+        { nodeId: "1", gps: [10, 95, 0] },
+        {
+          nodeId: "2",
+          gps: [10, 175, 0],
+        },
+        {
+          nodeId: "4",
+          gps: [10, 320, 0],
+        },
+      ],
       markers: [...markersFor3Node],
+      gps: [-30, 0, 3],
+      panoData: { poseHeading: 327 },
+    },
+    {
+      id: "4",
+      panorama: `${PATH}/scene1/DJI_0516.JPG`,
+      name: "Перейти к локации №4",
+      links: [
+        { nodeId: "1", gps: [10, 270, 0] },
+        {
+          nodeId: "2",
+          gps: [10, 320, 0],
+        },
+      ],
+      markers: [...markersFor4Node],
       gps: [-30, 0, 3],
       panoData: { poseHeading: 327 },
     },
@@ -412,6 +470,28 @@ function findNearestPointByYawPitch(clickedPoint, pointsArray) {
   });
 
   return { resIdx };
+}
+
+function _syncCurrentDataToLS() {
+  localStorage.setItem("NODE_1", JSON.stringify(window.markers1));
+  localStorage.setItem("NODE_2", JSON.stringify(window.markers2));
+  localStorage.setItem("NODE_3", JSON.stringify(window.markers3));
+}
+
+window._syncCurrentDataToLS = _syncCurrentDataToLS;
+
+function _getClassNameFigureById(id) {
+  if (id.indexOf(PREFIXES.ROAD) >= 0) {
+    return CLASS_NAME[PREFIXES.ROAD];
+  } else if (id.indexOf(PREFIXES.HIDE_AREA) >= 0) {
+    return CLASS_NAME[PREFIXES.HIDE_AREA];
+  } else if (id.indexOf(PREFIXES.HOUSE_SUCCESS) >= 0) {
+    return CLASS_NAME[PREFIXES.HOUSE_SUCCESS];
+  } else if (id.indexOf(PREFIXES.HOUSE_UNSUCCESS) >= 0) {
+    return CLASS_NAME[PREFIXES.HOUSE_UNSUCCESS];
+  } else {
+    return "unknown-class";
+  }
 }
 
 function saveOnLocalStorage(newMarkers = null) {

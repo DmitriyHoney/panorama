@@ -1,10 +1,10 @@
-[
+window.markers3 = [
   {
     id: "NODE_3_ROAD_1",
     polyline: [
       [
         [5.7335252655659215, -0.26962385812236],
-        [5.799599051039424, -0.4089637275992417],
+        [5.795683756936132, -0.40870423801718814],
         [5.801001029862961, -0.4227885060953376],
         [4.87649104809528, -0.347655266672795],
         [4.8573340329865875, -0.3568377988963558],
@@ -20,10 +20,10 @@
         [6.148626658546567, -0.555624845304207],
         [6.042452043265401, -0.5362783054597928],
         [5.926587998071122, -0.5005740766972049],
-        [5.832983319952711, -0.44121687915066854],
-        [5.825388129370034, -0.40318614097284744],
-        [5.818032909431047, -0.36653623402493185],
-        [5.765475238445408, -0.28165813749110424],
+        [5.835534606350688, -0.4316118479556472],
+        [5.820871366103623, -0.40618492401295603],
+        [5.804406149524235, -0.3650241851867837],
+        [5.76733205848603, -0.2736145785567794],
       ],
     ],
     svgStyle: {
@@ -47,10 +47,10 @@
         [6.223281713169636, -0.3605878190522924],
         [6.085767453914924, -0.37146380381673505],
         [5.860785936684434, -0.3787373322318033],
-        [5.821022783674541, -0.37342765312637627],
-        [5.835535309032676, -0.44091271776229224],
-        [5.925585437242455, -0.5004113616765951],
-        [6.147717662842041, -0.5547505980675442],
+        [5.807281989515899, -0.3734631230042893],
+        [5.834909128674629, -0.43330247629495666],
+        [5.925122624786886, -0.500565724485996],
+        [6.149443960000027, -0.555594915237779],
         [0.1274035964586702, -0.5215715259755327],
         [0.3402778847760469, -0.4613175147599011],
       ],
@@ -62,7 +62,7 @@
     },
     tooltip: {
       content:
-        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_2</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>11м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>11м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+        '<div class="house-tooltip house-tooltip_info">\n            <h3>Сервисная зона</h3>\n            <pre>NODE_1_HOUSE_SUCCESS_1</pre>\n            <ul>\n              <li><span>№1</span> <span>КПП</span></li>\n              <li><span>№2</span> <span>Сцена</span>  </li>\n              <li><span>№3</span> <span>Клубный дом</span>  </li>\n              <li><span>№4</span> <span>Сервисная компания</span>  </li>\n              <li><span>№5</span> <span>Зона барбекю</span>  </li>\n              <li><span>№6</span> <span>Воркаут площадка</span>  </li>\n              <li><span>№7</span> <span>Теннисный корт</span>  </li>\n              <li><span>№8</span> <span>Волейбольная площадка</span>  </li>\n              <li><span>№9</span> <span>Детская площадка</span>  </li>\n              <li><span>№10</span> <span>Поле для мини футбола</span>  </li>\n            </ul>\n          </div>',
       position: "top center",
       trigger: "click",
     },
@@ -208,52 +208,6 @@
     tooltip: {
       content:
         '\n        <div class="house-tooltip house-tooltip_info area-tooltip-info road-tooltip-info">\n          <pre>NODE_3_ROAD_5</pre>\n          <h3>Перейдите на другую локацию</h3>\n        </div>\n      ',
-      position: "top center",
-      trigger: "click",
-    },
-    position: { pitch: -0.1, yaw: -0.05 },
-  },
-  {
-    id: "NODE_3_HOUSE_UNSUCCESS_1",
-    polyline: [
-      [
-        [5.491236477180281, -0.9632752401439868],
-        [4.144580496447854, -0.9118719956372558],
-        [4.006298165830609, -0.9762226540294905],
-        [5.579328594137003, -1.008683880493567],
-      ],
-    ],
-    svgStyle: {
-      fill: "rgba(255, 0, 0, 0.20)",
-      stroke: "rgba(255, 255, 255, 0.5)",
-      strokeWidth: "1px",
-    },
-    tooltip: {
-      content:
-        '\n        <div class="house-tooltip house-tooltip_unsuccess">\n          <h3>Продано</h3>\n          <pre>NODE_3_HOUSE_UNSUCCESS_1</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>1м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>1м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
-      position: "top center",
-      trigger: "click",
-    },
-    position: { pitch: -0.1, yaw: -0.05 },
-  },
-  {
-    id: "NODE_3_HOUSE_UNSUCCESS_2",
-    polyline: [
-      [
-        [3.956715452936366, -0.9306899275356066],
-        [3.607258879989437, -0.5425129667207944],
-        [3.7254583000467676, -0.5400404631553215],
-        [4.09099060061217, -0.8751265729108493],
-      ],
-    ],
-    svgStyle: {
-      fill: "rgba(255, 0, 0, 0.20)",
-      stroke: "rgba(255, 255, 255, 0.5)",
-      strokeWidth: "1px",
-    },
-    tooltip: {
-      content:
-        '\n        <div class="house-tooltip house-tooltip_unsuccess">\n          <h3>Продано</h3>\n          <pre>NODE_3_HOUSE_UNSUCCESS_2</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>1м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>1м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
       position: "top center",
       trigger: "click",
     },
@@ -979,7 +933,7 @@
       [
         [5.015923817508418, -0.37861703152218573],
         [5.067973384335101, -0.33796514990727444],
-        [5.023070910688319, -0.3338378255627463],
+        [5.021844484149458, -0.3317309622913822],
         [4.967405756270006, -0.369335980094597],
       ],
     ],
@@ -1001,7 +955,7 @@
     polyline: [
       [
         [4.9673628423706555, -0.3691334808723439],
-        [5.023545305282716, -0.3335171556948828],
+        [5.023072574097176, -0.3307409251521083],
         [4.984655075422476, -0.3254259098690939],
         [4.922423712269714, -0.3581322248053065],
       ],
@@ -1256,7 +1210,7 @@
         [3.8572071086993267, -0.689154644368315],
         [4.043930755427107, -0.6442189416050734],
         [3.9302003823518286, -0.5400321199786573],
-        [3.724821710930191, -0.5371813473406739],
+        [3.7344338117652844, -0.5401355344586909],
       ],
     ],
     svgStyle: {
@@ -1750,6 +1704,1581 @@
     tooltip: {
       content:
         '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_67</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>758м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_68",
+    polyline: [
+      [
+        [5.586956996607969, -1.0105457389295003],
+        [4.718490623739923, -1.1397085049997777],
+        [4.601785544959526, -1.386801990945452],
+        [5.877209212763264, -1.1003396454694636],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_68</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>832м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_69",
+    polyline: [
+      [
+        [5.880252133164631, -1.0946677235793856],
+        [4.609323665485454, -1.3856680663414567],
+        [1.9130901856620353, -1.5099870309116188],
+        [6.2756107030633554, -1.1178645517913446],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_69</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>804м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_71",
+    polyline: [
+      [
+        [0.32186435316451906, -1.0793024476390358],
+        [1.555535664909111, -1.2945125042164793],
+        [1.4427912864173933, -1.0751497961408458],
+        [0.5704072647189681, -0.982960207288182],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_71</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>775м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_72",
+    polyline: [
+      [
+        [0.5633445133540635, -0.9801441867024061],
+        [1.4472862250851222, -1.075334983543562],
+        [1.3776798262194214, -0.9007305234928009],
+        [0.7184410018921058, -0.8523701920739315],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_72</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>723м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>101.63м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_73",
+    polyline: [
+      [
+        [0.7229586162065919, -0.8525668004679643],
+        [1.3728676616984163, -0.9023923496271884],
+        [1.3469080711083323, -0.793811204798387],
+        [0.8069623539924561, -0.7583974108909599],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_73</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>708м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_74",
+    polyline: [
+      [
+        [0.8790736370858683, -0.6452453386259935],
+        [0.8042715064127165, -0.7570465263635615],
+        [1.1726847789455441, -0.7980497958400399],
+        [1.18658522731455, -0.6775739458774979],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_74</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>618м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>123.62м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_75",
+    polyline: [
+      [
+        [1.1873213812311199, -0.6760812916387331],
+        [1.1756509118140117, -0.797670158881405],
+        [1.505854928720882, -0.7742856181008038],
+        [1.4558058315615763, -0.665836016989811],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_75</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>618м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_76",
+    polyline: [
+      [
+        [1.4543705550218355, -0.6636965181643895],
+        [1.5054915116611198, -0.7749227852650025],
+        [1.7388570199521978, -0.7200527357726565],
+        [1.665096732776215, -0.6301898645228152],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_76</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>618м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>123.62м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_77",
+    polyline: [
+      [
+        [1.8265590294172462, -0.8021807647515709],
+        [1.373452760133217, -0.8986817517973584],
+        [1.3463921081011974, -0.7935862780744367],
+        [1.7407043839126148, -0.7179157544407291],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_77</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>716м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_78",
+    polyline: [
+      [
+        [2.0093661195523422, -0.9273910810927974],
+        [1.4506568968089595, -1.078434801656392],
+        [1.374391663364664, -0.8972585763279843],
+        [1.8255145352944409, -0.8014769267872177],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_78</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>731м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>101.63м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_79",
+    polyline: [
+      [
+        [2.0091993037718083, -0.9256281423656816],
+        [1.439544833625527, -1.0765578320675258],
+        [1.531325992984912, -1.2681065650403105],
+        [2.302927183134339, -1.0510269897121254],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_79</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>769м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_80",
+    polyline: [
+      [
+        [2.3005387444337937, -1.0540251008284582],
+        [1.5298120983684937, -1.2689927613677892],
+        [1.7353276503348445, -1.450443064388693],
+        [2.7661514828630196, -1.1341319577478557],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_80</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>787м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>101.63м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_81",
+    polyline: [
+      [
+        [2.7617291832595123, -1.137259115427395],
+        [1.7080066141167138, -1.454266316610847],
+        [4.274124909110447, -1.5154693223764437],
+        [3.2795493365058395, -1.1423036665457804],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_81</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>787м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_82",
+    polyline: [
+      [
+        [3.2816440434888525, -1.1420403450252685],
+        [4.363485863597164, -1.5132915899091932],
+        [4.6502708108367194, -1.3072966700379687],
+        [3.7328332752799334, -1.0703766060782867],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_82</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>787м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>101.63м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_83",
+    polyline: [
+      [
+        [3.73554952287384, -1.0720141191811003],
+        [4.659870091383547, -1.3073952984241308],
+        [4.721095788046963, -1.1402895401817807],
+        [4.009298731075963, -0.9804090771821117],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_83</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>766м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_84",
+    polyline: [
+      [
+        [6.278746568394241, -1.1179971874107753],
+        [0.31811289919875596, -1.0797922381355889],
+        [1.5386566924738083, -1.2961775878576756],
+        [1.8849046131514278, -1.50978160040574],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_84</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>890м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>101.63м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_85",
+    polyline: [
+      [
+        [5.609463929377337, -0.5234335585676235],
+        [5.8735870938776005, -0.5039793092080047],
+        [5.948054031702876, -0.534533343723588],
+        [5.70089718360167, -0.6519817306858657],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_85</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>1036м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>101.63м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_86",
+    polyline: [
+      [
+        [5.700511464875397, -0.6528639990584497],
+        [5.946967490862303, -0.5344424301281485],
+        [6.0694616547878395, -0.5643282399445715],
+        [5.900527494462957, -0.7386420771153306],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_86</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>890м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_87",
+    polyline: [
+      [
+        [5.89983291808461, -0.7399002838246749],
+        [6.069578874188824, -0.5624832261250008],
+        [6.1848983479199395, -0.5750058534989093],
+        [6.190705699597168, -0.760916250559529],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_87</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>890м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>101.63м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_88",
+    polyline: [
+      [
+        [6.184597676520486, -0.5789749954417198],
+        [6.189100225729686, -0.7637592936070692],
+        [0.129347100016516, -0.7271541305730693],
+        [6.275817735379483, -0.5713492608093755],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_88</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>884м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_89",
+    polyline: [
+      [
+        [0.12892998481190016, -0.7276108065491318],
+        [6.276901250560818, -0.5706013708506106],
+        [0.10318386581008823, -0.5495643740400458],
+        [0.2894635035216963, -0.6799906072205908],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_89</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>719м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_90",
+    polyline: [
+      [
+        [0.288743171116284, -0.6796421951696843],
+        [0.10338214532673583, -0.5513950547768163],
+        [0.22472212424261204, -0.5198892233002823],
+        [0.4278174968306958, -0.6289908640558393],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_90</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>719м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_91",
+    polyline: [
+      [
+        [0.4300468630045572, -0.6290062362201425],
+        [0.22511881718272922, -0.5216870402213765],
+        [0.31785911907911607, -0.49042519981937716],
+        [0.5191607945787621, -0.5761367607905585],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_91</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>719м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_92",
+    polyline: [
+      [
+        [0.7180367646431746, -0.7291379526307025],
+        [0.4317693727419171, -0.6306108289430328],
+        [0.5198838655123734, -0.5774465947903265],
+        [0.7910352721683667, -0.6536135698898433],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_92</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>693м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_93",
+    polyline: [
+      [
+        [0.62900641673591, -0.8081020218028643],
+        [0.3061242817429341, -0.6741218358666146],
+        [0.42809896917348517, -0.6316927254299336],
+        [0.7191718992327228, -0.7296874213420392],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_93</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>693м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>82.55м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_94",
+    polyline: [
+      [
+        [0.46215402255549937, -0.9120455716017388],
+        [0.16128735622414866, -0.7196008806385823],
+        [0.305215290208863, -0.6752931465050276],
+        [0.6292000076067761, -0.8092845853992374],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_94</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>693м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_95",
+    polyline: [
+      [
+        [0.15230350647128785, -1.0080090945878424],
+        [0.01059099966527726, -0.7526474191726509],
+        [0.1604964902606131, -0.7195120613268937],
+        [0.4590372839123949, -0.910367205317872],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_95</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>732м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>82.55м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_96",
+    polyline: [
+      [
+        [6.12353938161078, -0.7596067857453921],
+        [6.059288743446646, -1.0170323457555908],
+        [0.1448790762350723, -1.0039452126724857],
+        [0.012341374826107624, -0.7532773782157216],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_96</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>712м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_97",
+    polyline: [
+      [
+        [6.124901071649944, -0.7626367075272489],
+        [5.962531945461058, -0.7421734890802982],
+        [5.737609989107382, -0.9529892429903168],
+        [6.059401623619023, -1.0160351712585967],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_97</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>712м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_98",
+    polyline: [
+      [
+        [5.740124952276933, -0.9557624670209606],
+        [5.953962793924948, -0.7482132857153916],
+        [5.810537623695202, -0.7038229977469839],
+        [5.511854989520691, -0.8460656923145629],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_98</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>712м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_99",
+    polyline: [
+      [
+        [5.515532989157468, -0.8431265093437093],
+        [5.813567577075608, -0.7063102851533234],
+        [5.7116623974969745, -0.6601917490459588],
+        [5.424316904026806, -0.7535474810487672],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_99</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>712м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_100",
+    polyline: [
+      [
+        [5.42524909091354, -0.7539483826139488],
+        [5.7112814583734846, -0.6610814164380332],
+        [5.672195666350649, -0.6128273129498214],
+        [5.366284847850892, -0.6572621734141877],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_100</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>712м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_101",
+    polyline: [
+      [
+        [5.368403007575798, -0.6572664408833582],
+        [5.671805329193079, -0.6136813693705698],
+        [5.631246432644985, -0.5638555526963751],
+        [5.368067281141419, -0.5816231262379215],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_101</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>712м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>82.55м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_102",
+    polyline: [
+      [
+        [5.364366110447843, -0.5827481434537258],
+        [5.6275159753109705, -0.5629205864049447],
+        [5.614757861388697, -0.5247590621122713],
+        [5.370546178758485, -0.5096838742103316],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_102</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>626м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>86.2м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_ROAD_6",
+    polyline: [
+      [
+        [3.7425539530728233, -0.5478379665119117],
+        [3.439222399035544, -0.5981860650323041],
+        [2.989575934079176, -0.6055377724205204],
+        [2.155888849531853, -0.4664779675124615],
+        [2.1838459653009714, -0.45312845240120536],
+        [2.5934021475863287, -0.5521493952016696],
+        [3.046251523683442, -0.5847773351219994],
+        [3.370367069218804, -0.5789053612062482],
+        [3.738201443919481, -0.5391466013358572],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(125, 125, 125, 0.5)",
+      stroke: "rgba(255, 255, 255, 0.3)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_info area-tooltip-info road-tooltip-info">\n          <pre>NODE_3_ROAD_6</pre>\n          <h3>Перейдите на другую локацию</h3>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_103",
+    polyline: [
+      [
+        [3.6929284486570575, -1.0373543308172484],
+        [3.963826524372518, -0.9423978607926928],
+        [3.7189504964985, -0.7261454370814722],
+        [3.513061752771101, -0.7696571807186632],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_103</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>918м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_104",
+    polyline: [
+      [
+        [3.3095371024101743, -1.10275597418395],
+        [3.694874287487379, -1.0386172918323258],
+        [3.5120304507291156, -0.7689982454889579],
+        [3.2488904287002467, -0.7988873305098787],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_104</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>899м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_105",
+    polyline: [
+      [
+        [2.8252737971648805, -1.0986910217673729],
+        [3.308854380800666, -1.102603653996193],
+        [3.248658447466548, -0.7989543641276478],
+        [2.921872982191194, -0.7959430366969031],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_105</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>899м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_106",
+    polyline: [
+      [
+        [2.825953376467072, -1.1000453964052839],
+        [2.9235279014990287, -0.7968998641441734],
+        [2.592747214347294, -0.7648694895451844],
+        [2.3790964123625575, -1.0251445691728458],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_106</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>900м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_107",
+    polyline: [
+      [
+        [2.3802607349485214, -1.0254288364649247],
+        [2.5936191819842254, -0.7642532534580484],
+        [2.324249318160666, -0.7024918161930263],
+        [2.048494103463943, -0.8882604213990124],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_107</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>899м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_108",
+    polyline: [
+      [
+        [2.0483755030232635, -0.8875983671660115],
+        [2.3242691592087743, -0.7027859837263661],
+        [2.165110892186214, -0.6469814896356656],
+        [1.8896051506707119, -0.7832506514437454],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_108</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>841м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_109",
+    polyline: [
+      [
+        [1.8878179301524591, -0.7830907777937819],
+        [2.1651625080687182, -0.6476283457246899],
+        [2.0531862980001536, -0.5987679507179471],
+        [1.7918203455069024, -0.698960160995798],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_109</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>841м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_110",
+    polyline: [
+      [
+        [1.792187578881583, -0.6982733827581331],
+        [2.002827186549065, -0.6218296092918445],
+        [1.9098154979300046, -0.5627169667638978],
+        [1.7191028418796157, -0.6209379679428961],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_110</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>653м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>123.62м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_111",
+    polyline: [
+      [
+        [2.0038889661165196, -0.6206590965110816],
+        [2.1333489751284063, -0.5567933359191253],
+        [2.049065935416478, -0.5119421327501295],
+        [1.9098154979300046, -0.5627169667638978],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_111</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>653м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_112",
+    polyline: [
+      [
+        [2.1344643388573976, -0.5566050787485826],
+        [2.2378509565799938, -0.4968542674850225],
+        [2.157589791688553, -0.4657444334628087],
+        [2.0511073474588537, -0.5106838227398343],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_112</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>653м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>123.62м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_113",
+    polyline: [
+      [
+        [2.2377240475632587, -0.49626917623377365],
+        [2.053198899828846, -0.5974770282981394],
+        [2.165110892186214, -0.6469814896356656],
+        [2.332655628493427, -0.5253060098298565],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_113</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>770м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_114",
+    polyline: [
+      [
+        [2.332655628493427, -0.5253060098298565],
+        [2.164301725803014, -0.6470201288375641],
+        [2.3032525189546913, -0.695226587991729],
+        [2.439940439147797, -0.5540400979877855],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_114</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>771м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_115",
+    polyline: [
+      [
+        [2.4407313843603333, -0.5534443831923253],
+        [2.303058079808628, -0.6947148757375015],
+        [2.5069064584435683, -0.7487464839443687],
+        [2.607084860159794, -0.5849280798741932],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_115</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>735м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_116",
+    polyline: [
+      [
+        [2.607084860159794, -0.5849280798741932],
+        [2.507281530440554, -0.7489295458466465],
+        [2.7295402214558124, -0.7846634476457117],
+        [2.7882082751875634, -0.6038798349045709],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_116</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>801м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_117",
+    polyline: [
+      [
+        [2.7876112222978424, -0.6038262453069523],
+        [2.729308310416677, -0.7839861092658778],
+        [2.959236450315707, -0.7986961917460218],
+        [2.9931057336551676, -0.6062958404592935],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_117</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>801м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_118",
+    polyline: [
+      [
+        [2.992531205808382, -0.6063142056436543],
+        [2.959482898531124, -0.799542714075038],
+        [3.181050536795488, -0.8030619250666291],
+        [3.1737892906067477, -0.6138541696930089],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_118</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>804м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_119",
+    polyline: [
+      [
+        [3.173080357376094, -0.6135950446627896],
+        [3.180796677094922, -0.8020026579855881],
+        [3.393757496131932, -0.7863960079357057],
+        [3.3416504329201775, -0.6081300278763107],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_119</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>736м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_120",
+    polyline: [
+      [
+        [3.3416639552670695, -0.6086956521167726],
+        [3.393715741139708, -0.7858354865101345],
+        [3.5756824262093247, -0.7590990248859932],
+        [3.4986563174092127, -0.5921691139536112],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_120</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>736м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_121",
+    polyline: [
+      [
+        [3.4978349124301444, -0.5911184037651047],
+        [3.5749428533040617, -0.7591991471698836],
+        [3.7188652037995267, -0.7256577894627303],
+        [3.618848664227635, -0.5736902772337111],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_121</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>720м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_122",
+    polyline: [
+      [
+        [2.4487463284206648, -0.3052011858734054],
+        [2.5054375240859024, -0.26666057142145516],
+        [2.5727773673385372, -0.28086886021929236],
+        [2.620683336669634, -0.3206751581907783],
+        [2.60931500222421, -0.3412993877084074],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_122</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>2079м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_123",
+    polyline: [
+      [
+        [2.4320698261787816, -0.3148920472673655],
+        [2.4796619567874134, -0.3266060475999577],
+        [2.4212323635594744, -0.36700311424098286],
+        [2.365458981516532, -0.35474595453011437],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_123</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>617м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>123.62м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_124",
+    polyline: [
+      [
+        [2.3654083103125134, -0.35528897657893976],
+        [2.4218212958130967, -0.3670288097645935],
+        [2.355405650267918, -0.41619712083076976],
+        [2.291746204284784, -0.40202247619661047],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_124</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>617м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_125",
+    polyline: [
+      [
+        [2.2907445576936616, -0.40083404880121654],
+        [2.3541107477212933, -0.41720750946371377],
+        [2.2616889417601906, -0.4771579690753338],
+        [2.1843607642760463, -0.45191380373339207],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_125</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>617м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>123.62м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_126",
+    polyline: [
+      [
+        [2.4047792209296883, -0.38222371350626316],
+        [2.478195207906282, -0.399491333220356],
+        [2.3587133828291704, -0.5042081590322325],
+        [2.2616889417601906, -0.4771579690753338],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_126</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>924м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_127",
+    polyline: [
+      [
+        [2.3599563381768287, -0.5043102232071037],
+        [2.479405496290688, -0.3995227276812754],
+        [2.5737161270069255, -0.4131991235790886],
+        [2.4735852587326055, -0.5321475898171419],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_127</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>924м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_128",
+    polyline: [
+      [
+        [2.4742805275151314, -0.5310503328280847],
+        [2.5743281339721102, -0.41319395559604777],
+        [2.682478296132251, -0.4268169726304858],
+        [2.606400337100098, -0.5523977216165816],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_128</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>924м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_129",
+    polyline: [
+      [
+        [2.605085393589938, -0.5524298708658213],
+        [2.682478296132251, -0.4268169726304858],
+        [2.916676588221538, -0.44614247534746276],
+        [2.8706817610779214, -0.5824826763241697],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_129</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>1038м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_130",
+    polyline: [
+      [
+        [2.8713184201069315, -0.5814425381654305],
+        [2.916841004006107, -0.44607850862650267],
+        [3.0255208265957867, -0.44773795633830815],
+        [3.140272881294586, -0.4779647967631919],
+        [3.1279979494429733, -0.585412442824838],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_130</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>1019м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_131",
+    polyline: [
+      [
+        [3.128007591478094, -0.5846548078556295],
+        [3.141118559552246, -0.4779666954348123],
+        [3.3445022398946884, -0.5180201165764822],
+        [3.3531190133263813, -0.5801083007450591],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_131</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>826м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>104.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_132",
+    polyline: [
+      [
+        [2.403679603717374, -0.3810632011025079],
+        [2.479078707307833, -0.32659331960963467],
+        [2.5664276974564166, -0.343276404199099],
+        [2.512084677760437, -0.40351923005503565],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_132</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>931м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_133",
+    polyline: [
+      [
+        [2.511476260147858, -0.40351059464844097],
+        [2.5664276974564166, -0.343276404199099],
+        [2.6270245858580576, -0.3545086715910397],
+        [2.6477329201296715, -0.37933555219519133],
+        [2.6259291252837746, -0.42008152254827236],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_133</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>956м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>121.5м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_HOUSE_SUCCESS_134",
+    polyline: [
+      [
+        [2.626518802903174, -0.4195062298384711],
+        [2.6477329201296715, -0.37933555219519133],
+        [2.8919498924355547, -0.40914335540572644],
+        [3.0244653368888974, -0.4470817282867934],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(0, 255, 0, 0.20)",
+      stroke: "rgba(255, 255, 255, 0.5)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_3_HOUSE_SUCCESS_134</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>1191м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>123.62м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+      position: "top center",
+      trigger: "click",
+    },
+    position: { pitch: -0.1, yaw: -0.05 },
+  },
+  {
+    id: "NODE_3_ROAD_7",
+    polyline: [
+      [
+        [2.431904508322455, -0.31452245012634417],
+        [2.4469464886601937, -0.303558293664169],
+        [2.7030364857545393, -0.35473095132666543],
+        [2.688113950090198, -0.38545028943452886],
+        [2.6533886028102476, -0.37999435576539353],
+        [2.6630705119844214, -0.3623301041913245],
+        [2.4431568206068244, -0.3171057586353081],
+      ],
+    ],
+    svgStyle: {
+      fill: "rgba(125, 125, 125, 0.5)",
+      stroke: "rgba(255, 255, 255, 0.3)",
+      strokeWidth: "1px",
+    },
+    tooltip: {
+      content:
+        '\n        <div class="house-tooltip house-tooltip_info area-tooltip-info road-tooltip-info">\n          <pre>NODE_3_ROAD_7</pre>\n          <h3>Перейдите на другую локацию</h3>\n        </div>\n      ',
       position: "top center",
       trigger: "click",
     },

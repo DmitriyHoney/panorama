@@ -1,4 +1,4 @@
-[
+window.markers2 = [
   {
     id: "NODE_2_ROAD_1",
     polyline: [
@@ -363,7 +363,7 @@
     },
     tooltip: {
       content:
-        '\n        <div class="house-tooltip house-tooltip_success">\n          <h3>В продаже</h3>\n          <pre>NODE_2_HOUSE_SUCCESS_13</pre>\n          <ul>\n            <li><span>Площадь участка:</span> <span>11м.кв</span></li>\n            <li><span>Площадь дома:</span> <span>11м.кв</span>  </li>\n          </ul>\n        </div>\n      ',
+        '<div class="house-tooltip house-tooltip_info">\n            <h3>Сервисная зона</h3>\n            <pre>NODE_1_HOUSE_SUCCESS_1</pre>\n            <ul>\n              <li><span>№1</span> <span>КПП</span></li>\n              <li><span>№2</span> <span>Сцена</span>  </li>\n              <li><span>№3</span> <span>Клубный дом</span>  </li>\n              <li><span>№4</span> <span>Сервисная компания</span>  </li>\n              <li><span>№5</span> <span>Зона барбекю</span>  </li>\n              <li><span>№6</span> <span>Воркаут площадка</span>  </li>\n              <li><span>№7</span> <span>Теннисный корт</span>  </li>\n              <li><span>№8</span> <span>Волейбольная площадка</span>  </li>\n              <li><span>№9</span> <span>Детская площадка</span>  </li>\n              <li><span>№10</span> <span>Поле для мини футбола</span>  </li>\n            </ul>\n          </div>',
       position: "top center",
       trigger: "click",
     },
@@ -2843,6 +2843,7 @@
   },
   {
     id: "NODE_2_HIDE_AREA_1",
+    goToNodeId: 3,
     polyline: [
       [
         [0.7255177609078204, -0.15254597083992838],
